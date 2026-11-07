@@ -1,0 +1,28 @@
+{
+  "name": "mern-task-management-dashboard",
+  "version": "1.0.0",
+  "description": "Full-stack MERN Task Management Dashboard with Kanban, List, Calendar, and Analytics views",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "server": "node server/index.js",
+    "client": "npm --prefix client run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "npm --prefix client run build",
+    "postinstall": "cd server && npm install && cd ../client && npm install"
+  },
+  "keywords": [
+    "mern",
+    "task-manager",
+    "kanban",
+    "react",
+    "express",
+    "mongodb",
+    "dashboard"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^10.0.7"
+  }
+}
